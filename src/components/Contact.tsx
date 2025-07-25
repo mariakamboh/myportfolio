@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Send } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -53,7 +53,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Location",
-      value: "Sukkur, Pakistan",
+      value: "Karachi, Pakistan",
       link: "#"
     }
   ];
@@ -80,11 +80,19 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                I'm always open to discussing new opportunities, creative ideas, or 
-                potential collaborations. Whether you have a project in mind or just 
-                want to say hello, feel free to reach out!
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                I'm always open to new opportunities, collaborations, or just a good conversation.
+                Whether you have an idea or simply want to say hello — I’d love to hear from you!
               </p>
+
+              <div className="flex items-center space-x-4 bg-primary/5 p-4 rounded-xl">
+                <div className="animate-bounce text-primary">
+                  <Send className="h-8 w-8" />
+                </div>
+                <blockquote className="text-muted-foreground italic">
+                  “Great things are built through great conversations.”
+                </blockquote>
+              </div>
             </div>
 
             <div className="space-y-4">
@@ -95,7 +103,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">{item.title}</h4>
-                    <a 
+                    <a
                       href={item.link}
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
@@ -176,8 +184,8 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button 
-                  type="submit" 
+                <Button
+                  type="submit"
                   disabled={isSubmitting}
                   className="w-full bg-primary hover:bg-primary-dark text-primary-foreground py-6 text-lg rounded-xl"
                 >
