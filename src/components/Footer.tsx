@@ -65,7 +65,7 @@ const Footer = () => {
             </div>
             <p className="text-muted text-sm">
               mariakamboh55@email.com<br />
-              Sukkur, Pakistan
+              Karachi, Pakistan
             </p>
           </div>
         </div>
