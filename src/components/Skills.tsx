@@ -4,14 +4,39 @@ const Skills = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
-  const skills = [
-    { name: 'C++', level: 70, color: 'from-green-600 to-green-800' },
-    { name: 'Java', level: 65, color: 'from-orange-400 to-orange-600' },
-    { name: 'HTML/CSS', level: 90, color: 'from-pink-400 to-pink-600' },
-    { name: 'JavaScript', level: 90, color: 'from-yellow-400 to-yellow-600' },
-    { name: 'React', level: 95, color: 'from-blue-400 to-blue-600' },
-    { name: 'TypeScript', level: 20, color: 'from-pink-400 to-pink-600' },
-
+  const skillCategories = [
+    {
+      category: "Languages",
+      skills: [
+        { name: 'C++', level: 70, icon: '💻' },
+        { name: 'Java', level: 65, icon: '☕' },
+        { name: 'JavaScript', level: 90, icon: '🟨' },
+        { name: 'HTML/CSS', level: 90, icon: '🌐' },
+      ]
+    },
+    {
+      category: "Frameworks & Libraries",
+      skills: [
+        { name: 'ReactJS', level: 95, icon: '⚛️' },
+        { name: 'TypeScript', level: 20, icon: '🔷' },
+      ]
+    },
+    {
+      category: "Tools & Technologies",
+      skills: [
+        { name: 'GitHub', level: 85, icon: '🐙' },
+        { name: 'VS Code', level: 95, icon: '💙' },
+        { name: 'IntelliJ IDEA', level: 80, icon: '🧠' },
+        { name: 'NetBeans', level: 75, icon: '☕' },
+      ]
+    },
+    {
+      category: "Database",
+      skills: [
+        { name: 'SQL', level: 75, icon: '🗄️' },
+        { name: 'MySQL', level: 80, icon: '🐬' },
+      ]
+    }
   ];
 
   useEffect(() => {
@@ -43,31 +68,40 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
-            {skills.map((skill, index) => (
-              <div key={skill.name} className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-lg font-semibold">{skill.name}</span>
-                  <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                </div>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {skillCategories.map((category, categoryIndex) => (
+              <div key={category.category} className="space-y-6 animate-slide-in-left" style={{ animationDelay: `${categoryIndex * 0.2}s` }}>
+                <h3 className="text-2xl font-bold text-foreground text-center lg:text-left">
+                  {category.category}
+                </h3>
                 
-                <div className="h-3 bg-muted rounded-full overflow-hidden">
-                  <div 
-                    className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out ${
-                      isVisible ? 'animate-in' : ''
-                    }`}
-                    style={{
-                      width: isVisible ? `${skill.level}%` : '0%',
-                      transitionDelay: `${index * 100}ms`
-                    }}
-                  />
+                <div className="grid gap-6">
+                  {category.skills.map((skill, skillIndex) => (
+                    <div key={skill.name} className="group">
+                      <div className="flex justify-between items-center mb-2">
+                        <div className="flex items-center gap-3">
+                          <span className="text-2xl">{skill.icon}</span>
+                          <span className="text-lg font-semibold">{skill.name}</span>
+                        </div>
+                        <span className="text-sm text-muted-foreground font-medium">{skill.level}%</span>
+                      </div>
+                      
+                      <div className="h-4 bg-muted rounded-full overflow-hidden">
+                        <div 
+                          className="h-full bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-1000 ease-out"
+                          style={{
+                            width: isVisible ? `${skill.level}%` : '0%',
+                            transitionDelay: `${(categoryIndex * category.skills.length + skillIndex) * 150}ms`
+                          }}
+                        />
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
           </div>
-
-          
         </div>
       </div>
     </section>
