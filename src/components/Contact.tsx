@@ -47,7 +47,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      value: "+92 (307)3467377",
+      value: "03073467377",
       link: "tel:+923073467377"
     },
     {

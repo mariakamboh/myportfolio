@@ -18,7 +18,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             <span className="gradient-text">Maria Kamboh</span>
             <br />
-            Frontened Developer
+            <span className="text-blue-200">Frontend Developer</span> {/* Light teal color */}
           </h1>
           
           <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -36,18 +36,18 @@ const Hero = () => {
             </Button>
             
             <a 
-  href="/resume.pdf"  // Path to the resume in the public folder
-  download  // This attribute triggers the download
->
-  <Button 
-    variant="outline" 
-    size="lg"
-    className="px-8 py-6 text-lg rounded-full border-2 hover:bg-surface transition-all duration-300"
-  >
-    <Download className="mr-2 h-5 w-5" />
-    Download CV
-  </Button>
-</a>
+              href="/resume.pdf"  // Path to the resume in the public folder
+              download  // This attribute triggers the download
+            >
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="px-8 py-6 text-lg rounded-full border-2 hover:bg-surface transition-all duration-300"
+              >
+                <Download className="mr-2 h-5 w-5" />
+                Download CV
+              </Button>
+            </a>
 
           </div>
         </div>

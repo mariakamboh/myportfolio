@@ -31,10 +31,9 @@ const Navbar = () => {
   };
 
   return (
-   <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-  isScrolled ? 'bg-white backdrop-blur-md shadow-lg' : 'bg-transparent'
-}`}>
-
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-white/80 backdrop-blur-md shadow-lg' : 'bg-white'
+    }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -87,7 +86,7 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-background/90 backdrop-blur-md rounded-lg mt-2">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-white/90 backdrop-blur-md rounded-lg mt-2">
               {navItems.map((item) => (
                 <button
                   key={item.name}
