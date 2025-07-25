@@ -12,36 +12,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
         <div className="fade-in space-y-8">
-          {/* Highlight Card */}
-          <Card className="highlight-card mx-auto max-w-md mb-8 animate-pulse-glow">
-            <CardContent className="p-6 text-center">
-              <h3 className="text-lg font-bold text-white mb-2">Maria Kamboh</h3>
-              <p className="text-primary font-semibold mb-3">Frontend Developer</p>
-              <div className="flex flex-wrap justify-center gap-2 mb-4">
-                {['HTML', 'CSS', 'ReactJS'].map((skill) => (
-                  <span 
-                    key={skill}
-                    className="px-3 py-1 bg-primary/30 text-white rounded-full text-xs font-medium backdrop-blur-sm"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-              <a 
-                href="/resume.pdf"
-                download
-                className="inline-block"
-              >
-                <Button 
-                  size="sm"
-                  className="btn-enhanced bg-primary/80 hover:bg-primary text-white px-4 py-2 text-sm rounded-full backdrop-blur-sm"
-                >
-                  <Download className="mr-2 h-4 w-4" />
-                  Download CV
-                </Button>
-              </a>
-            </CardContent>
-          </Card>
+         
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="gradient-text">Maria Kamboh</span>
