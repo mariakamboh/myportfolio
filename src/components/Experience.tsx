@@ -14,7 +14,7 @@ const Experience = () => {
         "Participated in code reviews, daily standups, and UI testing",
         "Implemented responsive design patterns for mobile and desktop compatibility"
       ],
-      technologies: ["React.js", "Tailwind CSS", "REST APIs", "Git", "GitHub", "JavaScript", "HTML", "CSS"]
+      technologies: ["React.js", "Git", "GitHub", "JavaScript", "HTML", "CSS"]
     },
   ];
 
