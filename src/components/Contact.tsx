@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -80,19 +80,11 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                I'm always interested in new opportunities, collaborations, or just a good conversation.
-                Whether you have an idea or simply want to say hello — I’d love to hear from you!
+              <p className="text-muted-foreground mb-8 leading-relaxed">
+                I'm always open to discussing new opportunities, creative ideas, or 
+                potential collaborations. Whether you have a project in mind or just 
+                want to say hello, feel free to reach out!
               </p>
-
-              <div className="flex items-center space-x-4 bg-primary/5 p-4 rounded-xl">
-                <div className="animate-bounce text-primary">
-                  <Send className="h-8 w-8" />
-                </div>
-                <blockquote className="text-muted-foreground italic">
-                  “Great things are built through great conversations.”
-                </blockquote>
-              </div>
             </div>
 
             <div className="space-y-4">
@@ -103,7 +95,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">{item.title}</h4>
-                    <a
+                    <a 
                       href={item.link}
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
@@ -114,34 +106,21 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* Social + Decorative */}
             <div className="pt-8">
               <h4 className="font-semibold mb-4">Follow Me</h4>
-              <div className="flex space-x-4 mb-6">
+              <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center hover:scale-105 transition-transform"
+                    className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group"
                     aria-label={social.label}
                   >
-                    <social.icon className="h-5 w-5 text-white" />
+                    <social.icon className="h-5 w-5 group-hover:scale-110 transition-transform" />
                   </a>
                 ))}
-              </div>
-
-              <div className="bg-muted/10 rounded-xl p-4 text-center shadow-sm">
-                <blockquote className="italic text-muted-foreground mb-2">
-                  “Design with purpose. Code with passion.”
-                </blockquote>
-                <div className="text-sm text-muted-foreground space-x-2 mt-1">
-                  <span className="px-2 py-1 bg-muted rounded-full text-xs">React</span>
-                  <span className="px-2 py-1 bg-muted rounded-full text-xs">JavaScript</span>
-                  <span className="px-2 py-1 bg-muted rounded-full text-xs">Tailwind</span>
-                  <span className="px-2 py-1 bg-muted rounded-full text-xs">UI/UX</span>
-                </div>
               </div>
             </div>
           </div>
@@ -197,8 +176,8 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button
-                  type="submit"
+                <Button 
+                  type="submit" 
                   disabled={isSubmitting}
                   className="w-full bg-primary hover:bg-primary-dark text-primary-foreground py-6 text-lg rounded-xl"
                 >
@@ -222,5 +201,3 @@ const Contact = () => {
     </section>
   );
 };
-
-export default Contact;
