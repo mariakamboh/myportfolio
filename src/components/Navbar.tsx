@@ -31,9 +31,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-background/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
-    }`}>
+   <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+  isScrolled ? 'bg-white backdrop-blur-md shadow-lg' : 'bg-transparent'
+}`}>
+
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -42,7 +43,7 @@ const Navbar = () => {
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="text-2xl font-bold gradient-text"
             >
-              AJ
+              MK
             </button>
           </div>
 

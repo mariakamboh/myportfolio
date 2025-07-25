@@ -15,15 +15,14 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className="fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="gradient-text">Creative</span>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <span className="gradient-text">Maria Kamboh</span>
             <br />
-            Developer
+            Frontened Developer
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Crafting digital experiences with modern web technologies. 
-            Passionate about creating beautiful, functional, and user-centered solutions.
+          <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto leading-relaxed">
+            As a passionate Frontend Developer with expertise in React, I specialize in building dynamic, user-friendly interfaces that deliver exceptional user experiences. With a keen eye for design and a deep understanding of modern web technologies, I am committed to creating responsive and visually appealing applications that are both performant and scalable.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -36,14 +35,20 @@ const Hero = () => {
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="px-8 py-6 text-lg rounded-full border-2 hover:bg-surface transition-all duration-300"
-            >
-              <Download className="mr-2 h-5 w-5" />
-              Download CV
-            </Button>
+            <a 
+  href="/resume.pdf"  // Path to the resume in the public folder
+  download  // This attribute triggers the download
+>
+  <Button 
+    variant="outline" 
+    size="lg"
+    className="px-8 py-6 text-lg rounded-full border-2 hover:bg-surface transition-all duration-300"
+  >
+    <Download className="mr-2 h-5 w-5" />
+    Download CV
+  </Button>
+</a>
+
           </div>
         </div>
       </div>

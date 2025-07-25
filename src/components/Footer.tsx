@@ -1,13 +1,12 @@
-import { Heart, Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import {Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, url: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, url: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, url: "https://twitter.com", label: "Twitter" },
-    { icon: Mail, url: "mailto:alex.johnson@email.com", label: "Email" }
+    { icon: Github, url: "https://github.com/mariakamboh", label: "GitHub" },
+    { icon: Linkedin, url: "https://www.linkedin.com/in/maria-kamboh-94ab7224b/", label: "LinkedIn" },
+    { icon: Mail, url: "mailto:mariakamboh55@email.com", label: "Email" }
   ];
 
   const quickLinks = [
@@ -23,9 +22,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold gradient-text">Alex Johnson</h3>
+            <h3 className="text-2xl font-bold gradient-text">Maria Kamboh</h3>
             <p className="text-muted max-w-md">
-              Passionate developer crafting digital experiences with modern technologies. 
+              Frontend developer crafting digital experiences with modern technologies. 
               Always learning, always building.
             </p>
           </div>
@@ -65,8 +64,8 @@ const Footer = () => {
               ))}
             </div>
             <p className="text-muted text-sm">
-              alex.johnson@email.com<br />
-              San Francisco, CA
+              mariakamboh55@email.com<br />
+              Sukkur, Pakistan
             </p>
           </div>
         </div>
@@ -74,11 +73,9 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted text-sm mb-4 md:mb-0">
-            © {currentYear} Alex Johnson. All rights reserved.
+            © {currentYear} Maria Kamboh. All rights reserved.
           </p>
-          <p className="text-muted text-sm flex items-center">
-            Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> and lots of coffee
-          </p>
+
         </div>
       </div>
     </footer>

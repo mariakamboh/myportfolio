@@ -1,6 +1,6 @@
 import { Code, Palette, Zap, Users } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import profileImage from '@/assets/profile.jpg';
+import profileImage from '@/assets/pic.jpg';
 
 const About = () => {
   const highlights = [
@@ -53,20 +53,16 @@ const About = () => {
           </div>
 
           <div className="slide-up space-y-6">
-            <h3 className="text-3xl font-bold mb-6">Hi, I'm Alex Johnson</h3>
+            <h3 className="text-3xl font-bold mb-6">Hi, I'm Maria Kamboh</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate full-stack developer with over 5 years of experience in creating 
-              modern web applications. I specialize in React, Node.js, and cloud technologies, 
-              with a strong focus on user experience and performance optimization.
+              I'm a passionate frontend developer focused on building modern, user-centric web applications. I specialize in React.js, and I'm expanding my skills in Node.js and cloud technologies. My work emphasizes performance, clean design, and responsive interfaces.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, contributing to 
-              open-source projects, or sharing knowledge with the developer community through 
-              blog posts and mentoring.
+              When I’m not coding, I’m usually diving into AI and machine learning concepts, building personal projects, or writing to express ideas—like my published article in Dawn Newspaper. I also enjoy learning new development tools and refining my skills through hands-on experimentation.g.
             </p>
             
             <div className="flex flex-wrap gap-3 pt-4">
-              {['JavaScript', 'React', 'Node.js', 'TypeScript', 'Python', 'AWS'].map((tech) => (
+              {['C++', 'Java','JavaScript', 'React'].map((tech) => (
                 <span 
                   key={tech}
                   className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium"

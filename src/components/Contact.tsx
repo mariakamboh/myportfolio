@@ -41,27 +41,26 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "alex.johnson@email.com",
-      link: "mailto:alex.johnson@email.com"
+      value: "mariakamboh55@email.com",
+      link: "mailto:mariakamboh55@email.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+92 (307)3467377",
+      link: "tel:+923073467377"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Sukkur, Pakistan",
       link: "#"
     }
   ];
 
   const socialLinks = [
-    { icon: Github, url: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, url: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, url: "https://twitter.com", label: "Twitter" }
+    { icon: Github, url: "https://github.com/mariakamboh", label: "GitHub" },
+    { icon: Linkedin, url: "https://www.linkedin.com/in/maria-kamboh-94ab7224b/", label: "LinkedIn" },
   ];
 
   return (
