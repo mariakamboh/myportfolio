@@ -17,20 +17,6 @@ const Experience = () => {
       ],
       technologies: ["React.js", "Tailwind CSS", "REST APIs", "Git", "GitHub", "JavaScript", "HTML", "CSS"]
     },
-    {
-      title: "Frontend Developer Intern",
-      company: "Capelin Solutions",
-      duration: "June – August 2024",
-      location: "Remote",
-      responsibilities: [
-        "Developed responsive web layouts using HTML, CSS, Flexbox, and Grid systems",
-        "Implemented database integration using Java, JDBC, and MySQL",
-        "Built dynamic user interfaces with ReactJS framework",
-        "Collaborated with senior developers on multiple client projects",
-        "Optimized web applications for performance and user experience"
-      ],
-      technologies: ["HTML", "CSS", "JavaScript", "ReactJS", "Java", "MySQL", "JDBC"]
-    }
   ];
 
   return (
