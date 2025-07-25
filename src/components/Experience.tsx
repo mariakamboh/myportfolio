@@ -10,7 +10,6 @@ const Experience = () => {
       location: "Remote",
       responsibilities: [
         "Collaborated with the frontend team to build responsive UI components using React.js and Tailwind CSS",
-        "Integrated REST APIs to display dynamic data on the dashboard",
         "Used Git and GitHub for version control and team collaboration",
         "Participated in code reviews, daily standups, and UI testing",
         "Implemented responsive design patterns for mobile and desktop compatibility"
