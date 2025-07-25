@@ -5,7 +5,7 @@ import AnimatedBackground from './AnimatedBackground';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient">
       {/* Animated Background */}
       <AnimatedBackground />
       
@@ -15,28 +15,41 @@ const Hero = () => {
           {/* Highlight Card */}
           <Card className="highlight-card mx-auto max-w-md mb-8 animate-pulse-glow">
             <CardContent className="p-6 text-center">
-              <h3 className="text-lg font-bold text-foreground mb-2">Maria Kamboh</h3>
+              <h3 className="text-lg font-bold text-white mb-2">Maria Kamboh</h3>
               <p className="text-primary font-semibold mb-3">Frontend Developer</p>
-              <div className="flex flex-wrap justify-center gap-2">
-                {['ReactJS', 'JavaScript', 'HTML/CSS'].map((skill) => (
+              <div className="flex flex-wrap justify-center gap-2 mb-4">
+                {['HTML', 'CSS', 'ReactJS'].map((skill) => (
                   <span 
                     key={skill}
-                    className="px-2 py-1 bg-primary/20 text-primary rounded-full text-xs font-medium"
+                    className="px-3 py-1 bg-primary/30 text-white rounded-full text-xs font-medium backdrop-blur-sm"
                   >
                     {skill}
                   </span>
                 ))}
               </div>
+              <a 
+                href="/resume.pdf"
+                download
+                className="inline-block"
+              >
+                <Button 
+                  size="sm"
+                  className="btn-enhanced bg-primary/80 hover:bg-primary text-white px-4 py-2 text-sm rounded-full backdrop-blur-sm"
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Download CV
+                </Button>
+              </a>
             </CardContent>
           </Card>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="gradient-text">Maria Kamboh</span>
             <br />
-            <span className="text-foreground">Frontend Developer</span>
+            <span className="text-white">Frontend Developer</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed">
             As a passionate Frontend Developer with expertise in React, I specialize in building dynamic, user-friendly interfaces that deliver exceptional user experiences. With a keen eye for design and a deep understanding of modern web technologies, I am committed to creating responsive and visually appealing applications that are both performant and scalable.
           </p>
           

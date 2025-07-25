@@ -5,6 +5,20 @@ const Experience = () => {
   const experiences = [
     {
       title: "Frontend Developer Intern",
+      company: "Scientific Bit",
+      duration: "March – May 2024",
+      location: "Remote",
+      responsibilities: [
+        "Collaborated with the frontend team to build responsive UI components using React.js and Tailwind CSS",
+        "Integrated REST APIs to display dynamic data on the dashboard",
+        "Used Git and GitHub for version control and team collaboration",
+        "Participated in code reviews, daily standups, and UI testing",
+        "Implemented responsive design patterns for mobile and desktop compatibility"
+      ],
+      technologies: ["React.js", "Tailwind CSS", "REST APIs", "Git", "GitHub", "JavaScript", "HTML", "CSS"]
+    },
+    {
+      title: "Frontend Developer Intern",
       company: "Capelin Solutions",
       duration: "June – August 2024",
       location: "Remote",
