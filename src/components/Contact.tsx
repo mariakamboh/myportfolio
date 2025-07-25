@@ -53,7 +53,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Location",
-      value: "Karachi, Pakistan",
+      value: "Sukkur, Pakistan",
       link: "#"
     }
   ];
@@ -81,7 +81,7 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                I'm always open to new opportunities, collaborations, or just a good conversation.
+                I'm always interested in new opportunities, collaborations, or just a good conversation.
                 Whether you have an idea or simply want to say hello — I’d love to hear from you!
               </p>
 
@@ -114,21 +114,34 @@ const Contact = () => {
               ))}
             </div>
 
+            {/* Social + Decorative */}
             <div className="pt-8">
               <h4 className="font-semibold mb-4">Follow Me</h4>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 mb-6">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group"
+                    className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center hover:scale-105 transition-transform"
                     aria-label={social.label}
                   >
-                    <social.icon className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                    <social.icon className="h-5 w-5 text-white" />
                   </a>
                 ))}
+              </div>
+
+              <div className="bg-muted/10 rounded-xl p-4 text-center shadow-sm">
+                <blockquote className="italic text-muted-foreground mb-2">
+                  “Design with purpose. Code with passion.”
+                </blockquote>
+                <div className="text-sm text-muted-foreground space-x-2 mt-1">
+                  <span className="px-2 py-1 bg-muted rounded-full text-xs">React</span>
+                  <span className="px-2 py-1 bg-muted rounded-full text-xs">JavaScript</span>
+                  <span className="px-2 py-1 bg-muted rounded-full text-xs">Tailwind</span>
+                  <span className="px-2 py-1 bg-muted rounded-full text-xs">UI/UX</span>
+                </div>
               </div>
             </div>
           </div>
