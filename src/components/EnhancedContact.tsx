@@ -65,10 +65,10 @@ const EnhancedContact = () => {
     <section id="contact" className="py-20 dark-section">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 heading-primary">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto">
+          <p className="text-xl text-professional max-w-2xl mx-auto">
             Let's discuss your next project or collaboration opportunity
           </p>
         </div>
@@ -77,8 +77,8 @@ const EnhancedContact = () => {
           {/* Contact Information */}
           <div className="space-y-8 animate-slide-in-left">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-white">Let's Connect</h3>
-              <p className="text-white/70 mb-8 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-6 heading-primary">Let's Connect</h3>
+              <p className="text-professional mb-8 leading-relaxed">
                 I'm always interested in new opportunities and exciting projects. 
                 Whether you have a project in mind or just want to chat about technology, 
                 feel free to reach out!
@@ -106,7 +106,7 @@ const EnhancedContact = () => {
           {/* Contact Form */}
           <Card className="card-hover border-0 shadow-lg animate-slide-in-right">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
+              <h3 className="text-2xl font-bold mb-6 heading-primary">Send a Message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
