@@ -33,8 +33,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      isScrolled ? 'navbar-gradient shadow-2xl' : 'navbar-gradient'
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-white/80 backdrop-blur-md shadow-lg' : 'bg-white'
     }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
@@ -42,7 +42,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <button 
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-300"
+              className="text-2xl font-bold gradient-text"
             >
               MK
             </button>
@@ -55,7 +55,7 @@ const Navbar = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="nav-link py-2"
+                  className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
                 >
                   {item.name}
                 </button>
@@ -67,7 +67,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <Button 
               onClick={() => scrollToSection('#contact')}
-              className="bg-primary hover:bg-primary-dark text-primary-foreground rounded-full px-6 hover:scale-105 transition-all duration-300"
+              className="bg-primary hover:bg-primary-dark text-primary-foreground"
             >
               Let's Talk
             </Button>
@@ -79,7 +79,6 @@ const Navbar = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-foreground hover:text-primary"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -89,12 +88,12 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 navbar-gradient rounded-lg mt-2 border border-border">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-white/90 backdrop-blur-md rounded-lg mt-2">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-3 py-2 nav-link rounded-lg"
+                  className="block w-full text-left px-3 py-2 text-foreground hover:text-primary transition-colors duration-300"
                 >
                   {item.name}
                 </button>
@@ -102,7 +101,7 @@ const Navbar = () => {
               <div className="px-3 py-2">
                 <Button 
                   onClick={() => scrollToSection('#contact')}
-                  className="w-full bg-primary hover:bg-primary-dark text-primary-foreground rounded-full"
+                  className="w-full bg-primary hover:bg-primary-dark text-primary-foreground"
                 >
                   Let's Talk
                 </Button>

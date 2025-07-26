@@ -14,13 +14,13 @@ const Hero = () => {
         <div className="fade-in space-y-8">
          
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight heading-primary">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="gradient-text">Maria Kamboh</span>
             <br />
-            <span className="text-foreground">Frontend Developer</span>
+            <span className="text-white">Frontend Developer</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-professional mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed">
             As a passionate Frontend Developer with expertise in React, I specialize in building dynamic, user-friendly interfaces that deliver exceptional user experiences. With a keen eye for design and a deep understanding of modern web technologies, I am committed to creating responsive and visually appealing applications that are both performant and scalable.
           </p>
           

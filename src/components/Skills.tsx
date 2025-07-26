@@ -60,10 +60,10 @@ const Skills = () => {
     <section id="skills" ref={sectionRef} className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 heading-primary">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
             My <span className="gradient-text">Skills</span>
           </h2>
-          <p className="text-xl text-professional max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Technologies and tools I work with to bring ideas to life
           </p>
         </div>
@@ -72,7 +72,7 @@ const Skills = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {skillCategories.map((category, categoryIndex) => (
               <div key={category.category} className="space-y-6 animate-slide-in-left" style={{ animationDelay: `${categoryIndex * 0.2}s` }}>
-                <h3 className="text-2xl font-bold heading-secondary text-center lg:text-left">
+                <h3 className="text-2xl font-bold text-foreground text-center lg:text-left">
                   {category.category}
                 </h3>
                 
@@ -82,9 +82,9 @@ const Skills = () => {
                       <div className="flex justify-between items-center mb-2">
                         <div className="flex items-center gap-3">
                           <span className="text-2xl">{skill.icon}</span>
-                          <span className="text-lg font-semibold heading-secondary">{skill.name}</span>
+                          <span className="text-lg font-semibold">{skill.name}</span>
                         </div>
-                        <span className="text-sm text-professional font-medium">{skill.level}%</span>
+                        <span className="text-sm text-muted-foreground font-medium">{skill.level}%</span>
                       </div>
                       
                       <div className="h-4 bg-muted rounded-full overflow-hidden">

@@ -14,15 +14,7 @@ const Experience = () => {
         "Participated in code reviews, daily standups, and UI testing",
         "Implemented responsive design patterns for mobile and desktop compatibility"
       ],
-      technologies: [
-        { name: "React.js", icon: "⚛️" },
-        { name: "Tailwind CSS", icon: "🎨" }, 
-        { name: "Git", icon: "📝" },
-        { name: "GitHub", icon: "🐙" },
-        { name: "JavaScript", icon: "⚡" },
-        { name: "HTML", icon: "🏗️" },
-        { name: "CSS", icon: "💅" }
-      ]
+      technologies: ["React.js", "Git", "GitHub", "JavaScript", "HTML", "CSS"]
     },
   ];
 
@@ -30,10 +22,10 @@ const Experience = () => {
     <section id="experience" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 heading-primary">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Work <span className="gradient-text">Experience</span>
           </h2>
-          <p className="text-xl text-professional max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Professional experience that shaped my development journey
           </p>
         </div>
@@ -46,7 +38,7 @@ const Experience = () => {
                   <div className="mb-4 md:mb-0">
                     <div className="flex items-center gap-2 mb-2">
                       <Briefcase className="h-5 w-5 text-primary" />
-                      <h3 className="text-2xl font-bold heading-primary">{experience.title}</h3>
+                      <h3 className="text-2xl font-bold text-foreground">{experience.title}</h3>
                     </div>
                     <h4 className="text-xl font-semibold text-primary mb-2">{experience.company}</h4>
                     
@@ -64,10 +56,10 @@ const Experience = () => {
                 </div>
 
                 <div className="mb-6">
-                  <h5 className="text-lg font-semibold mb-3 heading-secondary">Key Responsibilities:</h5>
+                  <h5 className="text-lg font-semibold mb-3 text-foreground">Key Responsibilities:</h5>
                   <ul className="space-y-2">
                     {experience.responsibilities.map((responsibility, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-professional">
+                      <li key={idx} className="flex items-start gap-2 text-muted-foreground">
                         <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                         <span>{responsibility}</span>
                       </li>
@@ -76,16 +68,15 @@ const Experience = () => {
                 </div>
 
                 <div>
-                  <h5 className="text-lg font-semibold mb-3 heading-secondary">Technologies Used:</h5>
-                  <div className="flex flex-wrap gap-3">
+                  <h5 className="text-lg font-semibold mb-3 text-foreground">Technologies Used:</h5>
+                  <div className="flex flex-wrap gap-2">
                     {experience.technologies.map((tech, idx) => (
-                      <div 
+                      <span 
                         key={idx}
-                        className="flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20 hover:bg-primary/20 transition-colors"
+                        className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium"
                       >
-                        <span className="text-base">{tech.icon}</span>
-                        <span>{tech.name}</span>
-                      </div>
+                        {tech}
+                      </span>
                     ))}
                   </div>
                 </div>
