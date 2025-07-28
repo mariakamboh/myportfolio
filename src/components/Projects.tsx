@@ -13,7 +13,7 @@ const Projects = () => {
       description: "A React.js-based bridal and groom attire rental platform with a sleek UI, real-time inventory display, and smooth booking flow.",
       image: close,
       technologies: ["React"],
-      github: "https://github.com/mariakamboh/Closet---Web-Project",
+      demo: "https://closet-web-project-sstz.vercel.app/",
       featured: true
     },
     {
@@ -21,14 +21,14 @@ const Projects = () => {
       description: "An AI-powered text summarizer built with Python, Flask, and the BART model using Hugging Face Transformers.",
       image: news,
       technologies: ["Python", "React", "TailwindCSS", "Flask"],
-      github: "https://github.com/mariakamboh/News-Summarizer",
+      demo: "https://www.loom.com/share/badeece5f29240c8bd3f89d1272d7431",
     },
     {
       title: "Subject Withdrawal App",
       description: "A MERN stack subject withdrawal application with user authentication, form submission, and an admin panel for managing student requests.",
       image: subj,
       technologies: ["React", "Node.js", "Express.js", "MongoDB"],
-      github: "https://github.com/mariakamboh/Subject-Withdrawl-App",
+      demo: "https://subject-withdrawl-app-988d-git-master-mariakambohs-projects.vercel.app/",
     },
   ];
 
@@ -60,9 +60,9 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <a href={project.demo} target="_blank" rel="noopener noreferrer">
                     <Button size="sm" variant="secondary" className="h-8 w-8 p-0">
-                      <Github className="h-4 w-4" />
+                      <ExternalLink className="h-4 w-4" />
                     </Button>
                   </a>
                 </div>
@@ -85,10 +85,10 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex gap-3">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1">
+                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex-1">
                     <Button variant="outline" size="sm" className="w-full">
-                      <Github className="mr-2 h-4 w-4" />
-                      Code
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      View Demo
                     </Button>
                   </a>
                 </div>

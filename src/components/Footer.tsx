@@ -17,13 +17,13 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-foreground text-background">
+    <footer className="bg-background border-t border-border">
       <div className="container mx-auto px-6 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold gradient-text">Maria Kamboh</h3>
-            <p className="text-muted max-w-md">
+            <p className="text-muted-foreground max-w-md">
               Frontend developer crafting digital experiences with modern technologies. 
               Always learning, always building.
             </p>
@@ -37,7 +37,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <a 
                     href={link.href}
-                    className="text-muted hover:text-white transition-colors duration-300"
+                    className="text-muted-foreground hover:text-primary transition-colors duration-300"
                   >
                     {link.name}
                   </a>
@@ -56,23 +56,23 @@ const Footer = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300 group"
+                  className="w-10 h-10 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300 group"
                   aria-label={social.label}
                 >
                   <social.icon className="h-5 w-5 group-hover:scale-110 transition-transform" />
                 </a>
               ))}
             </div>
-            <p className="text-muted text-sm">
-              mariakamboh55@email.com<br />
+            <p className="text-muted-foreground text-sm">
+              mariakamboh55@gmail.com<br />
               Karachi, Pakistan
             </p>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-muted text-sm mb-4 md:mb-0">
+        <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-muted-foreground text-sm mb-4 md:mb-0">
             © {currentYear} Maria Kamboh. All rights reserved.
           </p>
 

@@ -42,9 +42,10 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <button 
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-300"
+              className="flex items-center space-x-2 hover:scale-105 transition-transform duration-300"
             >
-              MK
+              <img src="/src/assets/logo.svg" alt="Maria Kamboh Logo" className="w-8 h-8" />
+              <span className="text-xl font-bold gradient-text hidden sm:block">Maria Kamboh</span>
             </button>
           </div>
 
