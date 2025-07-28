@@ -45,7 +45,7 @@ const Navbar = () => {
               className="flex items-center space-x-2 hover:scale-105 transition-transform duration-300"
             >
               <img src="/lovable-uploads/2c44de83-9203-4c76-b133-feb2c3cf01f1.png" alt="Maria Kamboh Logo" className="w-8 h-8" />
-              <span className="text-xl font-bold gradient-text hidden sm:block">Maria Kamboh</span>
+              
             </button>
           </div>
 
