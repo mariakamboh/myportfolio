@@ -38,8 +38,8 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-28"> {/* Increased margin-bottom */}
-  <div className="slide-up -mt-6"> {/* Negative margin-top pulls image up slightly */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-36"> {/* Increased mb */}
+  <div className="slide-up -mt-16"> {/* Increased negative margin to pull it up */}
     <div className="relative w-72 h-72 mx-auto lg:mx-0">
       <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl rotate-6 blur-sm"></div>
       <div className="relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl border border-white/10">
@@ -54,6 +54,7 @@ const About = () => {
     </div>
   </div>
 </div>
+
 
 
 
