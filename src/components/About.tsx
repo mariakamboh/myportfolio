@@ -40,31 +40,25 @@ const About = () => {
         </div>
 
         {/* IMAGE + TEXT */}
-        <div className="grid lg:grid-cols-[220px_1fr] gap-12 items-start mb-24">
-          <div className="slide-up flex justify-center lg:justify-start">
-            <div className="relative w-[220px] h-[220px]">
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl rotate-6 blur-sm"></div>
-              <div className="relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl border border-white/10">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
-                <img 
-                  src={profileImage} 
-                  alt="Profile" 
-                  className="w-full h-full object-cover relative z-10 mix-blend-normal"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-card/20 to-transparent z-20"></div>
-              </div>
-            </div>
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 mb-24">
+          {/* Image */}
+          <div className="relative w-56 h-56 rounded-full overflow-hidden shadow-xl border-4 border-white/10 bg-gradient-to-tr from-primary/10 to-accent/10">
+            <img 
+              src={profileImage}
+              alt="Profile"
+              className="w-full h-full object-cover"
+            />
           </div>
 
-          <div className="slide-up space-y-6">
-            <h3 className="text-3xl font-bold mb-6">Hi, I'm Maria Kamboh</h3>
+          {/* Text */}
+          <div className="max-w-2xl space-y-6">
+            <h3 className="text-3xl font-bold">Hi, I'm Maria Kamboh</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
               I'm a passionate frontend developer focused on building modern, user-centric web applications. I specialize in React.js, and I'm expanding my skills in Node.js and cloud technologies. My work emphasizes performance, clean design, and responsive interfaces.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               When I’m not coding, I’m usually diving into AI and machine learning concepts, building personal projects, or writing to express ideas—like my published article in Dawn Newspaper. I also enjoy learning new development tools and refining my skills through hands-on experimentation.
             </p>
-            
             <div className="flex flex-wrap gap-3 pt-4">
               {['C++', 'Java', 'JavaScript', 'React'].map((tech) => (
                 <span 
