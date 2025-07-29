@@ -3,49 +3,49 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const Experience = () => {
   const experiences = [
-    {
-      title: "Associate Software Engineer",
-      company: "Capelin Solutions",
-      duration: "August 2024 - Present",
-      location: "Remote",
-      responsibilities: [
-          "Developed and maintained user interfaces using React and TypeScript",
-          "Collaborated with cross-functional teams to implement scalable frontend features",
-          "Identified and resolved UI/UX issues to enhance overall user experience",
-          "Participated in code reviews and Agile sprints for continuous improvement",
-          "Reported and fixed UI bugs, contributing to quality assurance and performance"
-  ],
+  {
+    title: "Associate Software Engineer",
+    company: "Capelin Solutions",
+    duration: "August 2024 - Present",
+    location: "Remote",
+    responsibilities: [
+      "Developed and maintained user interfaces using React and TypeScript",
+      "Collaborated with cross-functional teams to implement scalable frontend features",
+      "Identified and resolved UI/UX issues to enhance overall user experience",
+      "Participated in code reviews and Agile sprints for continuous improvement",
+      "Reported and fixed UI bugs, contributing to quality assurance and performance"
+    ],
     technologies: [
       { name: "Frontend Development", icon: "💻" },
       { name: "React", icon: "⚛️" },
       { name: "TypeScript", icon: "🟦" },
       { name: "UI/UX", icon: "🎨" },
-      { name: "GitHub", icon: "🐙" },
+      { name: "GitHub", icon: "🐙" }
     ]
-    },
-    {
-      title: "QA Intern",
-      company: "Capelin Solutions",
-      duration: "July 2024 – August 2024",
-      location: "Remote",
-      responsibilities: [
-        "Reported UI bugs and functional issues during internal app testing",
-        "Collaborated with the development team to resolve issues and improve performance",
-        "Conducted UI/UX reviews for responsiveness and user experience",
-        "Used task management tools to log bugs and track fixes systematically"
-      ],
-      technologies: [
-        { name: "Bug Tracking", icon: "🐛" },
-        { name: "UI Testing", icon: "🔍" }, 
-        { name: "Task Management", icon: "📋" },
-        { name: "Quality Assurance", icon: "✅" },
-        { name: "Performance Testing", icon: "⚡" },
-        { name: "User Experience", icon: "👤" },
-        { name: "Test Documentation", icon: "📝" }
-      ]
-    },
-    
-  ];
+  },
+  {
+    title: "QA Intern",
+    company: "Capelin Solutions",
+    duration: "July 2024 – August 2024",
+    location: "Remote",
+    responsibilities: [
+      "Reported UI bugs and functional issues during internal app testing",
+      "Collaborated with the development team to resolve issues and improve performance",
+      "Conducted UI/UX reviews for responsiveness and user experience",
+      "Used task management tools to log bugs and track fixes systematically"
+    ],
+    technologies: [
+      { name: "Bug Tracking", icon: "🐛" },
+      { name: "UI Testing", icon: "🔍" },
+      { name: "Task Management", icon: "📋" },
+      { name: "Quality Assurance", icon: "✅" },
+      { name: "Performance Testing", icon: "⚡" },
+      { name: "User Experience", icon: "👤" },
+      { name: "Test Documentation", icon: "📝" }
+    ]
+  }
+];
+
 
   return (
     <section id="experience" className="py-20 bg-background">
