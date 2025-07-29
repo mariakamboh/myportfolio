@@ -38,9 +38,25 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-36"> {/* Increased mb */}
-  <div className="slide-up -mt-16"> {/* Increased negative margin to pull it up */}
-    <div className="relative w-72 h-72 mx-auto lg:mx-0">
+       <div className="grid lg:grid-cols-2 gap-12 items-center mb-44"> {/* Larger bottom margin */}
+  <div className="slide-up -mt-20"> {/* Stronger negative top margin */}
+    <div className="relative w-64 h-64 mx-auto lg:mx-0"> {/* Slightly smaller image box */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl rotate-6 blur-sm"></div>
+      <div className="relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
+        <img 
+          src={profileImage} 
+          alt="Profile" 
+          className="w-full h-full object-cover relative z-10 mix-blend-normal"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-card/20 to-transparent z-20"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div className="grid lg:grid-cols-2 gap-12 items-center mb-44"> {/* Larger bottom margin */}
+  <div className="slide-up -mt-20"> {/* Stronger negative top margin */}
+    <div className="relative w-64 h-64 mx-auto lg:mx-0"> {/* Slightly smaller image box */}
       <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl rotate-6 blur-sm"></div>
       <div className="relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl border border-white/10">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
