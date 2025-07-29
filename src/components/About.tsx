@@ -38,9 +38,9 @@ return(
     </div>
 
     {/* IMAGE + TEXT */}
-    <div className="grid lg:grid-cols-2 gap-12 items-center mb-32">
-      <div className="slide-up">
-        <div className="relative w-60 h-60 mx-auto lg:mx-0">
+    <div className="grid lg:grid-cols-2 gap-12 items-start mb-20">
+      <div className="slide-up flex items-start">
+        <div className="relative w-60 max-h-[240px] h-60 mx-auto lg:mx-0 mt-4">
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl rotate-6 blur-sm"></div>
           <div className="relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl border border-white/10">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
