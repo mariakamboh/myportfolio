@@ -40,7 +40,7 @@ const About = () => {
         </div>
 
         {/* IMAGE + TEXT */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-12 mb-20 text-center lg:text-left">
+<div className="flex flex-col lg:flex-row items-center justify-center gap-12 mb-20 text-center">
   {/* Image */}
   <div className="slide-up flex justify-center">
     <div className="relative w-60 h-60">
