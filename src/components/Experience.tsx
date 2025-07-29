@@ -4,24 +4,24 @@ import { Card, CardContent } from '@/components/ui/card';
 const Experience = () => {
   const experiences = [
     {
-      title: "Frontend Developer Intern",
-      company: "Scientific Bit",
-      duration: "March – May 2024",
+      title: "QA Intern",
+      company: "Capelin Solutions",
+      duration: "July 2024 – August 2024",
       location: "Remote",
       responsibilities: [
-        "Collaborated with the frontend team to build responsive UI components using React.js and Tailwind CSS",
-        "Used Git and GitHub for version control and team collaboration",
-        "Participated in code reviews, daily standups, and UI testing",
-        "Implemented responsive design patterns for mobile and desktop compatibility"
+        "Reported UI bugs and functional issues during internal app testing",
+        "Collaborated with the development team to resolve issues and improve performance",
+        "Conducted UI/UX reviews for responsiveness and user experience",
+        "Used task management tools to log bugs and track fixes systematically"
       ],
       technologies: [
-        { name: "React.js", icon: "⚛️" },
-        { name: "Tailwind CSS", icon: "🎨" }, 
-        { name: "Git", icon: "📝" },
-        { name: "GitHub", icon: "🐙" },
-        { name: "JavaScript", icon: "⚡" },
-        { name: "HTML", icon: "🏗️" },
-        { name: "CSS", icon: "💅" }
+        { name: "Bug Tracking", icon: "🐛" },
+        { name: "UI Testing", icon: "🔍" }, 
+        { name: "Task Management", icon: "📋" },
+        { name: "Quality Assurance", icon: "✅" },
+        { name: "Performance Testing", icon: "⚡" },
+        { name: "User Experience", icon: "👤" },
+        { name: "Test Documentation", icon: "📝" }
       ]
     },
   ];
