@@ -30,7 +30,8 @@
         </div>
 
         {/* TEXT */}
-        <div className="slide-up">
+       <div className="slide-up space-y-6 text-center mx-auto max-w-2xl">
+
           <h3 className="text-3xl font-bold mb-6">Hi, I'm Maria Kamboh</h3>
           <p className="text-lg text-muted-foreground leading-relaxed mb-4">
             I'm a passionate frontend developer focused on building modern, user-centric web applications...
