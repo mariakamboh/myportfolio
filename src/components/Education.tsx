@@ -3,25 +3,27 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const Education = () => {
   const educationHistory = [
-    {
-      level: "🎓 Matriculation",
-      institution: "Sindh Public High School",
-      duration: "2017 – 2019",
-      description: "Secondary School Certificate with strong academic foundation"
-    },
-    {
-      level: "🎓 Intermediate", 
-      institution: "Government Girls Degree College",
-      duration: "2019 – 2021",
-      description: "Higher Secondary Certificate in Pre-Engineering"
-    },
+    
     {
       level: "🎓 Bachelor's – BS Computer Science",
       institution: "IBA University", 
       duration: "2022 – Present",
       description: "Currently pursuing Bachelor's degree with focus on software development",
       highlight: true
-    }
+    },
+   
+    {
+      level: "🎓 Intermediate", 
+      institution: "Government Girls Degree College",
+      duration: "2019 – 2021",
+      description: "Higher Secondary Certificate in Pre-Engineering"
+    },
+     {
+      level: "🎓 Matriculation",
+      institution: "Sindh Public High School",
+      duration: "2017 – 2019",
+      description: "Secondary School Certificate with strong academic foundation"
+    },
   ];
 
   return (

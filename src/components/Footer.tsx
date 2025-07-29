@@ -24,8 +24,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold gradient-text">Maria Kamboh</h3>
             <p className="text-muted-foreground max-w-md">
-              Frontend developer crafting digital experiences with modern technologies. 
-              Always learning, always building.
+              Frontend Developer passionate about building sleek, responsive, and user-friendly web applications. Crafting meaningful digital experiences with modern technologies like React and TypeScript.
+              Always learning. Always building. Always improving.
+
+
             </p>
           </div>
 
@@ -63,10 +65,13 @@ const Footer = () => {
                 </a>
               ))}
             </div>
-            <p className="text-muted-foreground text-sm">
-              mariakamboh55@gmail.com<br />
-              Karachi, Pakistan
-            </p>
+            <div className="text-sm text-muted-foreground space-y-1">
+                <p>📍 <strong>Location:</strong> Karachi, Pakistan</p>
+                <p>📧 <strong>Email:</strong> <a href="mailto:maria.kamboh@example.com">maria.kamboh@example.com</a></p>
+                <p>📞 <strong>Phone:</strong> <a href="tel:03073467377">+92 307 3467377</a></p>
+            </div>
+
+
           </div>
         </div>
 

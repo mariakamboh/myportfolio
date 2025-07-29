@@ -41,19 +41,25 @@ const About = () => {
         </div>
 
         {/* IMAGE + TEXT */}
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-12 lg:gap-20 mb-24 text-center lg:text-left">
+<div className="flex flex-col-reverse lg:flex-row items-start justify-center gap-12 lg:gap-20 mb-24 text-center lg:text-left">
           {/* Text */}
           <div className="max-w-xl space-y-6 slide-up">
             <h3 className="text-3xl font-bold">Hi, I'm Maria Kamboh</h3>
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate frontend developer focused on building modern, user-centric web applications. I specialize in React.js, and I'm expanding my skills in Node.js and cloud technologies. My work emphasizes performance, clean design, and responsive interfaces.
-            </p>
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              When I’m not coding, I’m usually diving into AI and machine learning concepts, building personal projects, or writing to express ideas—like my published article in Dawn Newspaper. I also enjoy learning new development tools and refining my skills through hands-on experimentation.
-            </p>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
+            I'm a frontend developer passionate about crafting modern, user-focused web applications. I specialize in React.js and TypeScript, and have experience with JavaScript, Java, and C++.
+          </p>
+
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
+            I’m focused on clean design, performance, and responsive interfaces. I’m also exploring Node.js and cloud technologies to expand my full-stack capabilities.
+          </p>
+
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+            Outside of coding, I enjoy working on personal projects, exploring AI and machine learning, and occasionally writing—like my published article in Dawn Newspaper.
+          </p>
+
 
             <div className="flex flex-wrap gap-3 pt-4 justify-center lg:justify-start">
-              {['C++', 'Java', 'JavaScript', 'React'].map((tech) => (
+              {['C++', 'Java','HTML/CSS', 'JavaScript', 'React','TypeScript'].map((tech) => (
                 <span
                   key={tech}
                   className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium"

@@ -24,6 +24,26 @@ const Experience = () => {
         { name: "Test Documentation", icon: "📝" }
       ]
     },
+    {
+      title: "Associate Software Engineer",
+      company: "Capelin Solutions",
+      duration: "August 2024 - Present",
+      location: "Remote",
+      responsibilities: [
+          "Developed and maintained user interfaces using React and TypeScript",
+          "Collaborated with cross-functional teams to implement scalable frontend features",
+          "Identified and resolved UI/UX issues to enhance overall user experience",
+          "Participated in code reviews and Agile sprints for continuous improvement",
+          "Reported and fixed UI bugs, contributing to quality assurance and performance"
+  ],
+    technologies: [
+      { name: "Frontend Development", icon: "💻" },
+      { name: "React", icon: "⚛️" },
+      { name: "TypeScript", icon: "🟦" },
+      { name: "UI/UX", icon: "🎨" },
+      { name: "GitHub", icon: "🐙" },
+    ]
+    }
   ];
 
   return (
