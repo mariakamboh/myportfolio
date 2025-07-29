@@ -12,7 +12,7 @@ const About = () => {
     },
     {
       icon: Palette,
-      title: "UI/UX Design", 
+      title: "UI/UX Design",
       description: "Creating intuitive and beautiful user experiences"
     },
     {
@@ -28,69 +28,67 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-surface">
-      <div className="container mx-auto px-6 max-w-5xl">
+    <section id="about" className="py-24 bg-surface">
+      <div className="container mx-auto px-4 md:px-6 max-w-6xl">
+        {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             About <span className="gradient-text">Me</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             Passionate developer with a love for creating exceptional digital experiences
           </p>
         </div>
 
         {/* IMAGE + TEXT */}
-<div className="flex flex-col lg:flex-row items-center justify-center gap-12 mb-20 text-center">
-  {/* Image */}
-  <div className="slide-up flex justify-center">
-    <div className="relative w-60 h-60">
-      <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl rotate-6 blur-sm"></div>
-      <div className="relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl border border-white/10">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
-        <img 
-          src={profileImage} 
-          alt="Profile" 
-          className="w-full h-full object-cover relative z-10 mix-blend-normal"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-card/20 to-transparent z-20"></div>
-      </div>
-    </div>
-  </div>
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-12 lg:gap-20 mb-24 text-center lg:text-left">
+          {/* Text */}
+          <div className="max-w-xl space-y-6 slide-up">
+            <h3 className="text-3xl font-bold">Hi, I'm Maria Kamboh</h3>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+              I'm a passionate frontend developer focused on building modern, user-centric web applications. I specialize in React.js, and I'm expanding my skills in Node.js and cloud technologies. My work emphasizes performance, clean design, and responsive interfaces.
+            </p>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+              When I’m not coding, I’m usually diving into AI and machine learning concepts, building personal projects, or writing to express ideas—like my published article in Dawn Newspaper. I also enjoy learning new development tools and refining my skills through hands-on experimentation.
+            </p>
 
-  {/* Text */}
-  <div className="slide-up max-w-2xl space-y-6">
-    <h3 className="text-3xl font-bold mb-6">Hi, I'm Maria Kamboh</h3>
-    <p className="text-lg text-muted-foreground leading-relaxed">
-      I'm a passionate frontend developer focused on building modern, user-centric web applications. I specialize in React.js, and I'm expanding my skills in Node.js and cloud technologies. My work emphasizes performance, clean design, and responsive interfaces.
-    </p>
-    <p className="text-lg text-muted-foreground leading-relaxed">
-      When I’m not coding, I’m usually diving into AI and machine learning concepts, building personal projects, or writing to express ideas—like my published article in Dawn Newspaper. I also enjoy learning new development tools and refining my skills through hands-on experimentation.
-    </p>
-    
-    <div className="flex flex-wrap gap-3 pt-4 justify-center lg:justify-start">
-      {['C++', 'Java', 'JavaScript', 'React'].map((tech) => (
-        <span 
-          key={tech}
-          className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium"
-        >
-          {tech}
-        </span>
-      ))}
-    </div>
-  </div>
-</div>
+            <div className="flex flex-wrap gap-3 pt-4 justify-center lg:justify-start">
+              {['C++', 'Java', 'JavaScript', 'React'].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
 
+          {/* Image */}
+          <div className="relative w-64 h-64 lg:w-72 lg:h-72 slide-up">
+            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl rotate-6 blur-sm"></div>
+            <div className="relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-white/10">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
+              <img
+                src={profileImage}
+                alt="Profile"
+                className="w-full h-full object-cover relative z-10"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-card/20 to-transparent z-20"></div>
+            </div>
+          </div>
+        </div>
 
         {/* HIGHLIGHTS SECTION */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {highlights.map((item, index) => (
-            <Card key={index} className="card-hover border-0 shadow-md">
+            <Card key={index} className="border-0 shadow-lg hover:scale-[1.02] transition-transform duration-300">
               <CardContent className="p-6 text-center">
                 <div className="w-16 h-16 bg-gradient-to-tr from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-4">
                   <item.icon className="h-8 w-8 text-white" />
                 </div>
-                <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
-                <p className="text-muted-foreground">{item.description}</p>
+                <h4 className="text-lg font-semibold mb-2">{item.title}</h4>
+                <p className="text-muted-foreground text-sm">{item.description}</p>
               </CardContent>
             </Card>
           ))}
