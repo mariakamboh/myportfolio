@@ -1,6 +1,6 @@
 import { Code, Palette, Zap, Users } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import profileImage from '@/assets/pic.jpg';
+const profileImage = '/lovable-uploads/77100541-b7cd-44c6-a59f-0294291072e7.png';
 
 const About = () => {
   const highlights = [
