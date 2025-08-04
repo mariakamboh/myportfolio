@@ -43,7 +43,7 @@ const About = () => {
         {/* IMAGE + TEXT */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-20 mb-16 md:mb-20 text-center lg:text-left">
           {/* Image */}
-          <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 slide-up flex-shrink-0 mx-auto lg:mx-0 mb-8 lg:mb-0">
+          <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-80 xl:h-80 max-w-[320px] slide-up flex-shrink-0 mx-auto lg:mx-0 mb-8 lg:mb-0">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl rotate-6 blur-sm"></div>
             <div className="relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-white/10">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
