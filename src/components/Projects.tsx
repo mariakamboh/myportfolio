@@ -12,7 +12,7 @@ const Projects = () => {
       title: "Closet",
       description: "A React.js-based bridal and groom attire rental platform with a sleek UI, real-time inventory display, and smooth booking flow.",
       image: close,
-      technologies: ["React","Bootstrap", "HTML/CSS3", "Material UI"],
+      technologies: ["React"],
       demo: "https://closet-web-project-sstz.vercel.app/",
       featured: true
     },

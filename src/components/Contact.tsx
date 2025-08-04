@@ -81,10 +81,9 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-I'm always excited about new opportunities, innovative ideas, and impactful collaborations. Whether you have a project in mind, need a frontend developer, or simply want to chat about the latest in tech — feel free to reach out. Let’s build something amazing together!
-
-
-
+                I'm always open to discussing new opportunities, creative ideas, or 
+                potential collaborations. Whether you have a project in mind or just 
+                want to say hello, feel free to reach out!
               </p>
             </div>
 

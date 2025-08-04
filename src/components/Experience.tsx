@@ -1,28 +1,8 @@
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
-  const Experience = () => {
+const Experience = () => {
   const experiences = [
-    {
-      title: "Associate Software Engineer",
-      company: "Capelin Solutions",
-      duration: "August 2024 - Present",
-      location: "Remote",
-      responsibilities: [
-        "Developed and maintained user interfaces using React and TypeScript",
-        "Collaborated with cross-functional teams to implement scalable frontend features",
-        "Identified and resolved UI/UX issues to enhance overall user experience",
-        "Participated in code reviews and Agile sprints for continuous improvement",
-        "Reported and fixed UI bugs, contributing to quality assurance and performance"
-      ],
-      technologies: [
-        { name: "Frontend Development", icon: "💻" },
-        { name: "React", icon: "⚛️" },
-        { name: "TypeScript", icon: "🟦" },
-        { name: "UI/UX", icon: "🎨" },
-        { name: "GitHub", icon: "🐙" }
-      ]
-    },
     {
       title: "QA Intern",
       company: "Capelin Solutions",
@@ -36,16 +16,15 @@ import { Card, CardContent } from '@/components/ui/card';
       ],
       technologies: [
         { name: "Bug Tracking", icon: "🐛" },
-        { name: "UI Testing", icon: "🔍" },
+        { name: "UI Testing", icon: "🔍" }, 
         { name: "Task Management", icon: "📋" },
         { name: "Quality Assurance", icon: "✅" },
         { name: "Performance Testing", icon: "⚡" },
         { name: "User Experience", icon: "👤" },
         { name: "Test Documentation", icon: "📝" }
       ]
-    }
+    },
   ];
- 
 
   return (
     <section id="experience" className="py-20 bg-background">
