@@ -71,7 +71,7 @@ const About = () => {
           </div>
 
           {/* Image */}
-          <div className="relative w-64 h-64 lg:w-72 lg:h-72 slide-up">
+          <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 slide-up">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl rotate-6 blur-sm"></div>
             <div className="relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-white/10">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
